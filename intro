@@ -1,0 +1,67 @@
+Git Version control system
+
+Version control
+the management of changes to documents,computer programs,large websites, and other collections of  information
+
+Terms
+directory   -- folder
+cli --- command line interface 
+ls- la to list all the items including hidden files (la) for mac
+COde editor  -- word processor for writing code
+repository  -- proect, or folder/place where your project is
+Github -- a website to host  your repositories online
+
+Git commands
+
+clone -- bring a repository that is hosted somewhere like github into a folder on your local machine 
+add -- track your files and changes in git
+commit -- save your files in git
+push --upload git commits to a remote repo, like github
+pull -- download changes from remote repo to your  local  machine, the opposite of push
+.md file 
+
+
+git
+
+git status -- which shows the  changes eventhough not tracked
+git add */file -- then we can track
+git commit -m  -- to commit the changes
+
+
+SSH keys :
+
+ to push changes from local machine to git hub you have to prove that you are owner of this account for that you need to generate the ssh key by using this command
+
+ssh-keygen -t rsa -b 4096 -C "email@example.com" --  here t stands for type of encryption and emailid
+ssh-keygen is also enough
+
+enter 'filename' to store the key
+
+sshkey   -- private
+sshkey   -- public (we have to copy this we will enter in github)
+
+after adding to github
+then we need ssh key to ssh agent
+
+
+1.eval $(ssh-agent -s)
+2.ssh-add ~/(inpath)/filename
+
+PROCESS
+git init -- create repository locally
+git add /* -- to track files
+git commit -m 'message' -- to commit changes
+git push origin master  -- to push
+git remote add origin url -- create a repository in github and paste here
+git remote -v  -- to check
+git push -u origin master  -- -u is used here to avoid typing whole in the next time
+
+Git branching:
+
+Master Branch  -- default or main branch
+Feature Branch -- 
+You cant see the edits or commits which is done in feature branch in master branch and vice versa. 
+
+
+
+
