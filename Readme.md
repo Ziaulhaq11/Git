@@ -10,3 +10,4 @@ Watch tutorial on Youtube
 
 open index.html in browser
 then open github
+Have fun
