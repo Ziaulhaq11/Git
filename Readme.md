@@ -6,3 +6,7 @@ Some description
 
 Watch tutorial on Youtube
 
+#Local development
+
+open index.html in browser
+then open github
